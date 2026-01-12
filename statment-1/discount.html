@@ -1,0 +1,22 @@
+<script>
+    let total = 2200;
+    let discount = null;
+    let finalTotal = null;
+
+    if(total >= 2000){
+        discount = total * 0.2;
+    }else if(total >= 1000){
+        discount = total * 0.1;
+    }else if(total >= 700){
+        discount = total * 0.05;
+    }else{
+        discount = total * 0;
+    }
+
+    finalTotal = total - discount;
+
+    console.log(`Total : ${total}`);
+    console.log(`Discount : ${discount}`);
+    console.log(`Final Total : ${finalTotal}`);
+
+</script>

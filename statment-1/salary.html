@@ -1,0 +1,23 @@
+<script>
+    let basicSalary = 30000;
+    let exYear = 4;
+    let bonus = null;
+    let netSalary = null;
+
+    if(basicSalary >= 25000 && exYear >= 5){
+        bonus = basicSalary * 0.5;
+    }else if(basicSalary >= 20000 && exYear >= 3){
+        bonus = basicSalary * 0.3;
+    }else if(basicSalary >= 15000 && exYear >= 1){
+        bonus = basicSalary * 0.15;
+    }else{
+       bonus = basicSalary * 0; 
+    }
+
+    netSalary = basicSalary + bonus;
+
+    console.log(`Basic Salary : ${basicSalary}`);
+    console.log(`Bonus : ${bonus}`);
+    console.log(`Net Salary : ${netSalary}`);
+
+</script>
